@@ -1,0 +1,177 @@
+@media (max-width: 900px) {
+  .header-part {
+    justify-content: space-between;
+  }
+  .title-part .title {
+    font-size: 20px;
+    width: 250px;
+  }
+
+  .nav-items {
+    position: fixed;
+    right: -100%;
+    top: 4.5rem;
+    /* right: 0; */
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-items.active {
+    right: 0;
+  }
+  .nav-item {
+    padding: 0.5rem;
+    margin-top: 0.9rem;
+  }
+
+  .nav-link {
+    /* margin-left: 10px; */
+    color: rgb(246, 247, 250);
+    font-size: 20px;
+    background-color: none;
+    padding: 0.3rem 0.6rem;
+    margin: 2rem;
+  }
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* home section */
+  .home-content {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  /********** End home section ***********/
+
+  /* About */
+  #about {
+    flex-direction: column;
+  }
+  .leftside {
+    width: 100%;
+  }
+  .rightside {
+    width: 100%;
+  }
+
+  .user__data {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: 17px;
+  }
+  /******* End About *********/
+
+  /* professional */
+  .professional {
+    width: 80%;
+  }
+  /******* End professional *******/
+
+  /* Education Section */
+  #education-section {
+    width: 100%;
+  }
+  .education-details-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .education-details-section .education {
+    flex-direction: column;
+    /* width: 100%; */
+    position: relative;
+  }
+  .education-details-section .education .name-of-course {
+    display: block;
+    width: 100%;
+    height: 180px;
+  }
+  .education-details-section .education .course-details .course-name {
+    font-size: 18px;
+  }
+  .education-details-section .education .course-details .university {
+    font-size: 10px;
+  }
+  .education-details-section .education .course-details {
+    height: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /******* End Education Section *******/
+
+  /* contact Row */
+  #contact {
+    width: 100%;
+  }
+  #contact .contact-details {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  #contact .contact-details .row {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+  }
+  /* .contact-details .row #contact-form {
+  
+      } */
+
+  #contact .contact-details .row #contact-form .input-filed {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto 1rem auto;
+  }
+  #contact .contact-details .row #contact-form .input-filed .icon {
+    top: 0;
+    margin-left: 7px;
+    padding: 3px;
+  }
+  #contact .contact-details .row #contact-form .input-filed .input {
+    position: relative;
+    padding: 0.46rem;
+    background-color: rgb(253, 253, 253);
+    margin: 0;
+    width: 100%;
+  }
+  #contact .contact-details .row #contact-form .field {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  #contact .contact-details .row .right-col-content {
+    top: 0;
+    left: 15px;
+  }
+  /* contact Row End */
+}
+
+@media (max-width: 340px) {
+  .home-content {
+    margin: 0.5rem;
+  }
+  .buttons .btn-info {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 0; */
+    width: 60%;
+    margin: 0.5rem auto 0 auto;
+    font-size: 16px;
+  }
+  /* professional */
+  .professional {
+    width: 90%;
+  }
+  /*End professional */
+}

@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: rgb(255, 253, 253);
+  /* font-family: 'EB Garamond', serif;
+    font-family: 'Zen Kurenaido', sans-serif; */
+}
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+.header-part {
+  background-color: rgba(140, 0, 255, 0.932);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 70px;
+  padding: 0px 20px;
+}
+/* Logo Part */
+.title-part {
+  background: rgba(31, 90, 85, 0.699);
+  padding: 0rem 0.5rem;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  text-align: center;
+}
+.title-part .title {
+  font-family: "Monoton", cursive;
+  font-size: 25px;
+  letter-spacing: 8px;
+  word-spacing: 5px;
+  color: rgb(225, 209, 65);
+}
+/* End Logo Part */
+
+/* Navigation Part */
+.navigation {
+  position: relative;
+  /*  display: flex; 
+    flex-direction: column; */
+  /* min-width: 300px; */
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style-type: none;
+}
+.nav-link {
+  margin-left: 10px;
+  color: rgb(246, 247, 250);
+  font-size: 18px;
+  background-color: rgba(182, 235, 241, 0.486);
+  padding: 0.3rem 0.6rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover,
+.active1 {
+  color: rgb(48, 3, 248);
+}
+.fa-bars {
+  display: none;
+}
+/* End Navigation Part */
+
+/* home */
+.home {
+  background: url(./images/home-background.jpg);
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content {
+  border: 2px solid rgba(220, 220, 220, 0.082);
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.151);
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+}
+.profile-pic {
+  border-radius: 48%;
+  margin: 1.5rem 0;
+  width: 170px;
+  height: 170px;
+  /* -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); */
+}
+.user-name {
+  color: rgb(255 255 255 / 80%);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+.user-work {
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: rgba(245, 175, 26, 0.925);
+  font-weight: 500;
+}
+.buttons {
+  margin-top: 1.6rem;
+  width: 100%;
+  font-size: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.btn-info {
+  margin: 0.5rem;
+  background: rgb(78, 28, 158);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  opacity: 0.8;
+}
+.cv-button:hover {
+  background-color: rgba(140, 0, 255, 0.692);
+}
+/* end home */
+
+/* About Section */
+
+#about {
+  position: relative;
+  display: flex;
+  width: 85%;
+  margin: 3rem auto 3rem;
+  border: 1px solid rgba(128, 128, 128, 0.411);
+  box-shadow: 0 15px 25px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  /* justify-content: center; */
+}
+
+/* leftside section */
+
+.leftside {
+  padding: 0.8rem;
+  margin: 0.3rem;
+  width: 50%;
+}
+.about-content {
+  font-weight: 900;
+  font-size: 25px;
+  font-family: Merriweather;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+.my-defenition {
+  width: 90%;
+  margin: 0 0 1rem 0;
+  line-height: 1.3rem;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-defenition #more {
+  color: green;
+}
+.cv-downlad {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  color: white;
+  background-color: rgb(78, 28, 158);
+  text-transform: uppercase;
+  font-size: 14px;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* rightside section */
+
+.rightside {
+  padding: 0.8rem;
+  margin: 0.3rem;
+  width: 50%;
+}
+.basic-info {
+  font-weight: 900;
+  font-size: 25px;
+  font-family: Merriweather;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.user__data {
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 0.8rem;
+  word-break: break-all;
+}
+.user__data .user-1 {
+  flex-wrap: wrap;
+  flex: 0 0 40.333333%;
+  max-width: 40.333333%;
+}
+
+/********End About Section *********/
+
+/* Professional Section */
+.professional {
+  /* border:5px solid red; */
+  position: relative;
+  width: 50%;
+  margin: 0 auto 5rem auto;
+}
+.professional .heading {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: Merriweather;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+.professional_details {
+  width: 100%;
+  /* border: 2px solid blue; */
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.professional_details .prof-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.professional_details .prof-row .prof-data {
+  position: relative;
+  margin: 0.3rem;
+  /* background-color: green; */
+}
+.skill-part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+.prof-heading,
+span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.699);
+}
+.skill-persent {
+  width: 100%;
+  background: rgb(243, 243, 243);
+  height: 5px;
+  margin-bottom: 0.5rem;
+}
+.persent {
+  width: 100%;
+  background-color: green;
+  height: 0.25rem;
+}
+
+/******* End Professional Section *******/
+
+/* Education Section */
+
+#education-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  width: 80%;
+}
+#education-section .education-heading {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: Merriweather;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+.education-details-section {
+  /* background-color: orange; */
+  position: relative;
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+.education-details-section .education {
+  display: flex;
+  /* display: inline-block; */
+  margin: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.education-details-section .education .name-of-course {
+  background-color: green;
+  text-align: center;
+  height: 180px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.education-details-section .education .name-of-course .batch {
+  position: relative;
+  width: 100%;
+  top: 2.5rem;
+}
+.education-details-section .education .name-of-course .batch .year-pass {
+  color: white;
+  font-weight: 600;
+}
+.education-details-section .education .name-of-course .batch .designation {
+  position: relative;
+  top: 1rem;
+  font-weight: 600;
+  font-size: 17px;
+}
+.education-details-section .education .course-details {
+  position: relative;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.education-details-section .education .course-details .course-name {
+  font-size: 22px;
+  font-weight: 400;
+}
+.education-details-section .education .course-details .university {
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(158, 157, 157);
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: 900;
+}
+/********End Education Section *********/
+
+/* Contact Start */
+
+#contact {
+  position: relative;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  /* min-width: 400px; */
+  height: auto;
+  margin: 0.5rem auto;
+  overflow: hidden;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+#contact .contact-heading {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: Merriweather;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+#contact .contact-details {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+#contact .contact-details .row {
+  width: 50%;
+  padding: 1rem;
+  background-color: lightgray;
+}
+#contact .contact-details .row .leftside-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 1px;
+  padding: 0 0.1rem;
+}
+
+#contact .contact-details .row #contact-form {
+  position: relative;
+  /* background-color: yellow; */
+  width: 100%;
+  padding: 1rem;
+}
+#contact .contact-details .row #contact-form .input-filed {
+  position: relative;
+  display: block;
+  margin: 0 0 1rem 0;
+  background-color: #fcfcfc;
+  max-width: 500px;
+  height: 40px;
+  border-radius: 20px;
+}
+#contact .contact-details .row #contact-form .input-filed .icon {
+  position: relative;
+  display: inline-block;
+  padding: 0.1rem 0.3rem;
+  margin-left: 0.8rem;
+  top: 6px;
+  /* align-items: center;
+    text-align: center; */
+  background-color: rgb(174, 174, 177);
+  border-radius: 50%;
+}
+#contact .contact-details .row #contact-form .input-filed .input {
+  position: absolute;
+  outline: none;
+  border: none;
+  margin-left: 0.5rem;
+  padding: 0.39rem 0.5rem;
+  max-width: 75%;
+  border-radius: 25px;
+  font-size: 18px;
+  color: rgb(121, 118, 118);
+  background-color: #fcfcfc;
+}
+#contact .contact-details .row #contact-form .field textarea {
+  position: relative;
+  width: 100%;
+  background-color: aquamarine;
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(124, 122, 122);
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
+#contact .contact-details .row #contact-form .field .btn {
+  background-color: rgb(39, 91, 201);
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+#contact .contact-details .row #contact-form .field .btn .sbumit-btn {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0.4rem 1.5rem;
+  background: red;
+  position: relative;
+  border-radius: 5px;
+}
+#contact .contact-details .row #contact-form .field .btn .sbumit-btn:hover {
+  background-color: rgb(43, 226, 104);
+}
+
+#contact .contact-details .row .right-col-content {
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  top: 3.5rem;
+  left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+#contact .contact-details .row .right-col-content .address-head,
+.phone-head,
+.email-head {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+/* footer */
+footer {
+  position: relative;
+  background-color: rgba(140, 0, 255, 0.692);
+  /* height: 80px; */
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 16px;
+  color: white;
+}
+footer a {
+  color: yellow;
+}
+/* End Contact  */
