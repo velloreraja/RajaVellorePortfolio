@@ -11,7 +11,7 @@
 }
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: var(--scoll-padding, 50px);
+  scroll-padding-top: var(--scroll-padding, 50px);
 }
 a {
   text-decoration: none;
