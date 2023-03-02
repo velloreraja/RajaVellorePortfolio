@@ -53,3 +53,6 @@ submit1.addEventListener("click", () => {
     return false;
   }
 });
+const navigationHeight = document.querySelector('.header-part').offsetHeight;
+
+document.documentElement.style.setProperty('--scroll-padding', navigationHeight + "px");
